@@ -74,16 +74,19 @@ export default function CreatePost() {
 					placeholder={'Title'}
 					value={title}
 					onChange={(e) => setTitle(e.target.value)}
+					required
 				/>
 				<input
 					type="summary"
 					placeholder={'Summary'}
 					value={summary}
 					onChange={(e) => setSummary(e.target.value)}
+					required
 				/>
 				<input
 					type="file"
 					onChange={(e) => setFiles(e.target.files)}
+					required
 				/>
 				<div>
 					<label>
@@ -102,6 +105,7 @@ export default function CreatePost() {
 					</label>
 				</div>
 				<ReactQuill
+				
 					value={content}
 					modules={modules}
 					formats={formats}

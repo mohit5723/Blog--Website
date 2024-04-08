@@ -52,7 +52,10 @@ export default function Header() {
 				to="/"
 				className="logo"
 			>
-				MyBlog
+			<div className="left">
+			<img className='svg-logo' src="../public/fire-tail-svgrepo-com.svg" alt="" />
+				BlogTales
+			</div>
 			</Link>
 			<nav>
 				{username && (

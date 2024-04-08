@@ -1,6 +1,9 @@
 import { formatISO9075 } from 'date-fns';
+import 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Post({
+	_id,
 	title,
 	summary,
 	cover,
@@ -12,13 +15,17 @@ export default function Post({
 	return (
 		<div className="post">
 			<div className="images">
-				<img
-					src={`http://localhost:4000/` + cover}
-					alt=""
-				/>
+				<Link to={`/post/${_id}`}>
+					<img
+						src={`http://localhost:4000/` + cover}
+						alt=""
+					/>{' '}
+				</Link>
 			</div>
 			<div className="content">
-				<h2>{title}</h2>
+				<Link to={`/post/${_id}`}>
+					<h2>{title}</h2>
+				</Link>
 				<p className="info">
 					<a
 						href=""
