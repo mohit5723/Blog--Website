@@ -31,7 +31,7 @@ To run this project locally, follow the steps below:
     npm run dev
     ```
 
-The client will run on `http://localhost:3000`.
+The client will run on `http://localhost:5173`.
 
 ### API (Backend)
 
